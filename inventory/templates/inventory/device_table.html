@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>SISTEMA FLUXO</title>
+        <meta charset="character_set">
+   </head>
+
+    <body>
+        
+        <div class="header">
+            <h1>TABELA DE APARELHOS</h1>
+        </div>
+
+        <div class="container">
+            <!-- <p>It works</p> -->
+
+            <table>
+                <tr>
+                    <th>Produto</th>
+                    <th>IMEI</th>
+                    <th>Proprietario<th>
+                    <th>Categoria</th>
+                    <th>Localizacao</th>
+                </tr>
+                {% for device in devices %}
+                    <tr>
+                        <td>{{ device.product_name }}</td> 
+                        <td>{{ device.reference_code }}</td>
+                        <td>{{ device.owner }}</td>
+                        <td>{{ device.category }}</td>
+                        <td>{{ device.location }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+    </body>
+
+</html>
