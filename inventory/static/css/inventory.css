@@ -1,0 +1,15 @@
+h1 {
+    color: #32A7CF;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans serif;
+    font-size: 36pt;
+    text-decoration: None; 
+.page-header {
+    background-color: #DBDBDB;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+body {
+    padding-left: 15px;
+}
